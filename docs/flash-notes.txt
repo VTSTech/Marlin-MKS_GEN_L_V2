@@ -1,0 +1,35 @@
+Compiled using Arduino
+
+Modify path for your compiled Marlino.ino.hex, -xdelay=6000 push reset on MKS Gen L Board 6 seconds after sending command.
+
+PS C:\Users\VTSTech\AppData\Local\Arduino15\packages\arduino\tools\avrdude\8.0.0-arduino1\bin> ./avrdude -C"..\etc\avrdude.conf" -v -patmega2560 -cwiring -PCOM7 -b115200 -D "-Uflash:w:C:\Users\VTSTech\AppData\Local\arduino\sketches\962DE7C9AAC81A67C5C2BA6AE9055BBE\Marlin.ino.hex:i" -xdelay=6000
+Avrdude version 8.0-arduino.1
+Copyright see https://github.com/avrdudes/avrdude/blob/main/AUTHORS
+
+System wide configuration file is C:\Users\VTSTech\AppData\Local\Arduino15\packages\arduino\tools\avrdude\8.0.0-arduino1\etc\avrdude.conf
+
+Using port            : COM7
+Using programmer      : wiring
+Setting baud rate     : 115200
+Error: timeout
+Error: timeout
+Error: timeout
+AVR part              : ATmega2560
+Programming modes     : SPM, ISP, HVPP, JTAG
+Programmer type       : Wiring
+Description           : Wiring bootloader using STK500 v2 protocol
+Programmer model      : AVRISP
+HW version            : 15
+FW Version Controller : 2.10
+SCK period            : 0.1 us
+
+AVR device initialized and ready to accept instructions
+Device signature = 1E 98 01 (ATmega2560)
+Reading 65526 bytes for flash from input file Marlin.ino.hex
+in 1 section [0, 0xfff5]: 256 pages and 10 pad bytes
+Writing 65526 bytes to flash
+Writing | ################################################## | 100% 9.83 s
+Reading | ################################################## | 100% 7.46 s
+65526 bytes of flash verified
+
+Avrdude done.  Thank you.
